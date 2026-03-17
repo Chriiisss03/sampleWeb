@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Booking Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1. NAVIGATION -->
+<nav>
+  <span class="logo">Wandr</span>
+  <a href="#">Flights</a>
+  <a href="#">Hotels</a>
+  <a href="#">Cars</a>
+  <a href="#">Experiences</a>
+  <a href="#">Deals</a>
+  <a href="#" style="margin-left:auto">Log in</a>
+  <a href="#">Sign up</a>
+</nav>
+
+<hr>
+
+<!-- 2. HERO / SEARCH -->
+<section>
+  <div class="section-title">Search</div>
+  <h2>Find your perfect stay</h2>
+  <div style="margin-bottom:10px">
+    <button>Hotels</button>
+    <button>Flights</button>
+    <button>Packages</button>
+    <button>Cars</button>
+  </div>
+  <div class="search-row">
+    <div><label>Destination</label><input type="text" placeholder="City or property"></div>
+    <div><label>Check-in</label><input type="date"></div>
+    <div><label>Check-out</label><input type="date"></div>
+    <div><label>Guests</label><input type="text" placeholder="2 adults" style="width:100px"></div>
+    <button>Search</button>
+  </div>
+</section>
+
+<hr>
+
+<!-- 3. SEARCH RESULTS -->
+<section>
+  <div class="section-title">Search Results</div>
+  <h2>Barcelona — 248 properties found</h2>
+  <div class="results-layout">
+    <div class="filters">
+      <h3>Filters</h3>
+      <p style="font-size:12px;color:#666">Price / night</p>
+      <input type="range" min="0" max="500" value="300" style="width:100%">
+      <p style="font-size:12px;color:#666;margin-top:10px">Star rating</p>
+      <label><input type="checkbox" checked> ★★★★★</label>
+      <label><input type="checkbox" checked> ★★★★</label>
+      <label><input type="checkbox"> ★★★</label>
+      <p style="font-size:12px;color:#666;margin-top:10px">Amenities</p>
+      <label><input type="checkbox" checked> Pool</label>
+      <label><input type="checkbox" checked> Free WiFi</label>
+      <label><input type="checkbox"> Breakfast</label>
+      <label><input type="checkbox"> Spa</label>
+      <p style="font-size:12px;color:#666;margin-top:10px">Property type</p>
+      <label><input type="radio" name="type" checked> Hotel</label>
+      <label><input type="radio" name="type"> Resort</label>
+      <label><input type="radio" name="type"> Apartment</label>
+    </div>
+    <div style="flex:1">
+      <div class="card">
+        <div class="card-info">
+          <h3>Grand Hotel Marina</h3>
+          <p>★★★★★ · 4.8 (328 reviews) · Barceloneta, Barcelona</p>
+          <p>Pool · Free WiFi · Breakfast · Spa</p>
+        </div>
+        <div class="card-price">
+          <strong>$249</strong>
+          <span style="font-size:12px">per night</span><br>
+          <button style="margin-top:8px">View deal</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <h3>Boutique Rambla Suites</h3>
+          <p>★★★★ · 4.6 (191 reviews) · Las Ramblas, Barcelona</p>
+          <p>Free WiFi · Rooftop Bar · Central location</p>
+        </div>
+        <div class="card-price">
+          <strong>$178</strong>
+          <span style="font-size:12px">per night</span><br>
+          <button style="margin-top:8px">View deal</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <h3>Seaview Apartments</h3>
+          <p>★★★★ · 4.4 (87 reviews) · Barceloneta Beach, Barcelona</p>
+          <p>Kitchenette · Balcony · Self check-in</p>
+        </div>
+        <div class="card-price">
+          <strong>$130</strong>
+          <span style="font-size:12px">per night</span><br>
+          <button style="margin-top:8px">View deal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- 4. PROPERTY DETAIL -->
+<section>
+  <div class="section-title">Property Detail</div>
+  <h2>Grand Hotel Marina</h2>
+  <div class="gallery">
+    <div class="main-photo">Main Photo</div>
+    <div class="side">
+      <div class="side-photo">Photo 2</div>
+      <div class="side-photo">Photo 3</div>
+    </div>
+  </div>
+  <div class="detail-layout">
+    <div>
+      <p>★★★★★ · 4.8 · 328 reviews · Barceloneta, Barcelona</p>
+      <p style="font-size:13px;color:#555;margin:8px 0">Pool · Spa · Breakfast · Free WiFi · Gym · Parking · Concierge</p>
+      <p style="font-size:13px">Overlooking the Barcelona seafront with panoramic views, rooftop pool and direct beach access.</p>
+      <h3 style="margin-top:15px">Available Rooms</h3>
+      <div class="rooms">
+        <div class="room-option">
+          <strong>Standard Room</strong><br>
+          1 king · 28m²<br>
+          $249 / night<br>
+          <small>Free cancellation</small>
+        </div>
+        <div class="room-option selected">
+          <strong>Deluxe Sea View ✓</strong><br>
+          King + sofa · 38m²<br>
+          $349 / night<br>
+          <small>Breakfast included</small>
+        </div>
+        <div class="room-option">
+          <strong>Junior Suite</strong><br>
+          Living room · 55m²<br>
+          $549 / night<br>
+          <small>All inclusive</small>
+        </div>
+      </div>
+    </div>
+    <div class="book-card">
+      <strong style="font-size:20px">$349</strong> <span style="font-size:12px">/ night</span>
+      <p style="font-size:12px;margin:4px 0">Deluxe Sea View</p>
+      <label style="font-size:12px">Check-in</label>
+      <input type="date">
+      <label style="font-size:12px">Check-out</label>
+      <input type="date">
+      <label style="font-size:12px">Guests</label>
+      <input type="text" value="2 adults">
+      <hr style="margin:10px 0">
+      <p style="font-size:13px;margin:3px 0">$349 × 5 nights = $1,745</p>
+      <p style="font-size:13px;margin:3px 0">Cleaning fee = $45</p>
+      <p style="font-size:13px;margin:3px 0"><strong>Total: $1,790</strong></p>
+      <button style="width:100%;margin-top:10px">Reserve now</button>
+      <p style="font-size:11px;text-align:center;margin-top:5px">Free cancellation until Oct 3</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- 5. BOOKING FLOW -->
+<section>
+  <div class="section-title">Booking Flow</div>
+  <h2>Complete your booking</h2>
+  <div class="step-bar">
+    <div class="step done">① Room selected</div>
+    <div class="step active">② Guest details</div>
+    <div class="step">③ Extras</div>
+    <div class="step">④ Payment</div>
+  </div>
+  <div class="form-grid">
+    <div><label>First name</label><input type="text" placeholder="Jane"></div>
+    <div><label>Last name</label><input type="text" placeholder="Smith"></div>
+    <div><label>Email</label><input type="email" placeholder="jane@email.com"></div>
+    <div><label>Phone</label><input type="tel" placeholder="+61 400 000 000"></div>
+    <div class="full"><label>Special requests (optional)</label><input type="text" placeholder="e.g. high floor, early check-in"></div>
+  </div>
+  <button style="margin-top:15px">Continue to Extras →</button>
+</section>
+
+<hr>
+
+<!-- 6. CONFIRMATION -->
+<section>
+  <div class="section-title">Confirmation</div>
+  <div class="confirm-box">
+    <h2>✅ Booking Confirmed!</h2>
+    <p style="font-size:13px">Confirmation sent to jane@email.com · Ref: #WDR-20491</p>
+    <button>Download PDF voucher</button>
+    <button>Manage booking</button>
+    <div class="confirm-grid">
+      <div class="confirm-item"><label>Property</label>Grand Hotel Marina</div>
+      <div class="confirm-item"><label>Dates</label>15 – 20 Oct 2025</div>
+      <div class="confirm-item"><label>Room</label>Deluxe Sea View</div>
+      <div class="confirm-item"><label>Guests</label>2 adults</div>
+      <div class="confirm-item"><label>Total paid</label>$1,790 AUD</div>
+      <div class="confirm-item"><label>Cancellation</label>Free until Oct 3</div>
+    </div>
+  </div>
+</section>
+
+<hr>
+<p style="text-align:center;font-size:12px;color:#999">© 2025 Wandr · Privacy Policy · Terms of Service</p>
+
+<script src="script.js"></script>
+</body>
+</html>
